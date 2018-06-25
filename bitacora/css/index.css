@@ -1,0 +1,11 @@
+.bgimage2{
+    background-image: url("../images/bg1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%  200%; 
+}
+.noresize{
+    resize: none;
+}
+.font{
+    font-size: 150% 
+}
