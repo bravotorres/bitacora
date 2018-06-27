@@ -40,11 +40,15 @@
         <div>
         <?php
             if (isset($_POST['entrada'])) {
-                $email=$_POST['name'];
-                $pass=$_POST['pass'];
+                $email = $_POST['name'];
+                $pass = $_POST['pass'];
+
+                print("$email -> $email")
+                print("$pass -> $pass")
+                
                 include("util.php");
 
-                $ctaUsuario= "SELECT date(now()) as fhoy, now() as ahora,  idusuarios, username, password FROM usuarios where  idstatus = 1 AND email='$email' AND password='$pass'";
+                $ctaUsuario = "SELECT date(now()) as fhoy, now() as ahora,  idusuarios, username, password FROM usuarios where  idstatus = 1 AND email='$email' AND password='$pass'";
                 $result=$conn->query($ctaUsuario);
                 $rows=$result->num_rows;
                 
