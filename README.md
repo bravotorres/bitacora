@@ -1,2 +1,2 @@
-# doctora
+# Bitacora
 Proyecto de colaboracion
