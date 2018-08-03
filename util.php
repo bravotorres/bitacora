@@ -8,12 +8,12 @@ Programer  : ...""J.A.L.R.""...
 Rev: Alejandro Bravo <quironProject@gmail.com>
 */
 // $conn= mysqli_connect("localhost","root","EsCoMproyecto","login");
-$conn= mysqli_connect("localhost","root","leonidas","login"); 
+$conn= mysqli_connect("localhost","root","leonidas","login");
 
 if  (!$conn) {
-    die('No pudo conectarse: '. mysql_error());
+    die('No pudo conectarse.');
 }else{
-    print("successful");	
+    print("successful");
 }
 
 ?>
