@@ -132,7 +132,6 @@ $conn->query("SET NAMES 'utf8'");
 				}
 		}
 ?>
-						</table>
 	<div>
 	<br><br><br>
 	  <a class="btn btn-default btn-lg" href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"><br>Home</a>

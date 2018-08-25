@@ -1065,8 +1065,8 @@ th {
 .glyphicon-menu-up:before {
   content: "\e260";
 }
-.bgimage: {
-  background: "C:\wamp\www\bitacora\images\background";
+.bgimage {
+  background-image: url("../images/bg1.jpg");
 }
 * {
   -webkit-box-sizing: border-box;
@@ -6551,7 +6551,7 @@ button.close {
   position: fixed;
 }
 @-ms-viewport {
-  width: device-width;
+  width: max-width;
 }
 .visible-xs,
 .visible-sm,
