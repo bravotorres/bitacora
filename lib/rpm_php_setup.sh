@@ -10,10 +10,11 @@ yum-config-manager --enable remi-php72
 
 yum update
 
-yum -y install php72
+yum -y install httpd php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
 
-yum -y install php72-php-fpm php72-php-gd php72-php-json php72-php-mbstring \
-	php72-php-mysqlnd php72-php-xml php72-php-xmlrpc php72-php-opcache
+apachectl restart
+
+echo -e "PHP7.2 & Apache instalados."
 
 
 

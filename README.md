@@ -2,16 +2,23 @@
 Proyecto de colaboración.
 
 ## Requerimientos de sistema:
-### Unix-like:
+### Windows
+* XAMPP for Windows 7.2.7
+
+### Unix-like: Debian 
 * LinuxMint DE 2 Betsy
 * PHP 7.2
 * MySQL community-server 5.5.6
 
-### Windows
-* XAMPP for Windows 7.2.7
+### Unix-like: RHEL7/CentOS7
+* CentOS 7
+* PHP 7.2
+* MySQL 8.0.13 for Linux on x86_64 (MySQL Community Server - GPL)
+* Apache Server 2.4.6
 
-## Actualizar a partir de una version anterior de PHP
-```
+## Instalación de entorno en Unix-like: Debian 
+### Actualizar a partir de una version anterior de PHP
+```bash
 # Eliminamos versiones anteriores de PHP
 oldphp="$(dpkg --list | grep php | awk '/^ii/{print $2}')"
 apt-get --purge remove $oldphp -y
@@ -34,7 +41,7 @@ php --version
 ```
 
 ## Instalación nueva de PHP 7.2
-```
+```bash
 apt-get install -y apt-transport-https lsb-release ca-certificates
 
 # Se agrega la clave pública del repositorio
@@ -52,3 +59,5 @@ apt-get install -y php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-gd php7.2-
 # Visualizamos la version actual de PHP
 php -v
 ```
+
+## Instalación de entorno en Unix-like: RHEL7/CentOS7

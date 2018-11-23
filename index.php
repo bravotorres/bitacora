@@ -20,7 +20,9 @@ date_default_timezone_set('Mexico/General');
 <body id="LoginForm">
 <div class="container">
     <!-- Panel de Administrador ...-->
+    
 
+    <!-- Formulario: Inicio de Sesión -->
     <div class="login-form">
         <div class="main-div">
             <div class="panel">
