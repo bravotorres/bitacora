@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo -e "\n Eliminamos versiones anteriores de PHP"
+oldphp="$(dpkg --list | grep php | awk '/^ii/{print $2}')"
+apt-get --purge remove $oldphp -y
+
+echo -e "\n> PHP 7: Se agrega la claves pública del repositorio."
+wget -O - https://www.dotdeb.org/dotdeb.gpg | apt-key add -
+
+echo -e "\n> PHP 7: Se agrega el repositorio \'dotdeb.org\' al sistema."
+cp dotdeb.org.list /etc/apt/sources.list.d/
+
+echo -e "\n Actualización del sistema:"
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
+
+# Instalacion de  PHP 7 
+echo -e "\n> PHP 7: Reemplazamos los anteriores paquetes con los actuales."
+newphp=`sed 's/php5/php7.0/g' <<< $oldphp`
+apt-get install $newphp
+
+echo -e "\n> PHP 7: Version actual de PHP: "
+php --version
+
