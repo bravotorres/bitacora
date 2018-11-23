@@ -8,7 +8,7 @@ date_default_timezone_set('Mexico/General');
 <head>
  <style type="text/css">
    .bgimage2{
-     background-image: url("images/bg3.jpg");
+     background-image: url("/images/bg4.jpg");
      background-repeat: no-repeat;
      background-size: 100%  200%; 
   }
