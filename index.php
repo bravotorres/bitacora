@@ -141,7 +141,7 @@ date_default_timezone_set('Mexico/General');
             }
 
         }else{
-            print("<br><div class='alert alert-danger' role='alert'>Sus datos no coinciden</div>");
+            print("<br><div class='alert alert-danger' role='alert'>Verifique los campos, sus datos no coinciden</div>");
         }
         $conn->close();
     }
