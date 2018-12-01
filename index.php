@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <?php
 date_default_timezone_set('Mexico/General');
 ?>
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@ date_default_timezone_set('Mexico/General');
 
     <link rel="icon" href="images/ipn.png">
     <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="login.css" rel="stylesheet" id="bootstrap-csss">
+    <link href="css/login.css" rel="stylesheet" id="bootstrap-csss">
 
 </head>
 <body id="LoginForm">
@@ -65,7 +65,7 @@ date_default_timezone_set('Mexico/General');
                     $email = $_POST['name'];
                     $pass = $_POST['pass'];
 
-                    $ctaUsuario = "SELECT date(now()) as fhoy, now() as ahora,  id, username, password FROM usuarios where  id_status = 1 AND email='$email' AND password='$pass'";
+                    $ctaUsuario = "SELECT date(now()) as fhoy, now() as ahora,  id, username, password FROM usuarios where  id_status=1 AND email='$email' AND password='$pass'";
                     
                     $result = $conn->query($ctaUsuario);
                     $rows = $result->num_rows;
