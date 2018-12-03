@@ -62,30 +62,30 @@
     <div class="col-md-6"></div>
     <div class="col-md-6">
         <?php
-        include("util.php");
+        // include("util.php");
 
-        if (isset($_POST['entrada'])) {
-            $email = $_POST{'name'};
-            $pass = $_POST['pass'];
+        // if (isset($_POST['entrada'])) {
+        //     $email = $_POST{'name'};
+        //     $pass = $_POST['pass'];
             
-            // $ctaUsuario = "SELECT idusuarios, alias, username, email, password FROM usuarios where  idusuarios=1 AND email='$email' AND password='$pass'";
-            $ctaUsuario = "SELECT id, username, email, password FROM usuarios where id=1 AND email='$email' AND password='$pass'";
-            print("<br><br><br><div class='alert alert-warning' role='alert'>$ctaUsuario</div>");
+        //     // $ctaUsuario = "SELECT idusuarios, alias, username, email, password FROM usuarios where  idusuarios=1 AND email='$email' AND password='$pass'";
+        //     $ctaUsuario = "SELECT id, username, email, password FROM usuarios where id=1 AND email='$email' AND password='$pass'";
+        //     print("<br><br><br><div class='alert alert-warning' role='alert'>$ctaUsuario</div>");
 
-            $result = $conn->query($ctaUsuario);
-            $rows = $result->num_rows;
+        //     $result = $conn->query($ctaUsuario);
+        //     $rows = $result->num_rows;
             
-            if ($rows==1){
-                session_start();
-                $_SESSION['eMail'] = $email;
-                $_SESSION['Pass'] = $pass;
-                header('Location: panelAdmin.php');
-            }
-            else{
-                print("<br><br><br><div class='alert alert-warning' role='alert'>Su correo electrónico o contraseña son invalidos.</div>");
-            }
-            $result->close();
-            $conn->close();
+        //     if ($rows==1){
+        //         session_start();
+        //         $_SESSION['eMail'] = $email;
+        //         $_SESSION['Pass'] = $pass;
+        //         header('Location: panelAdmin.php');
+        //     }
+        //     else{
+        //         print("<br><br><br><div class='alert alert-warning' role='alert'>Su correo electrónico o contraseña son invalidos.</div>");
+        //     }
+        //     $result->close();
+        //     $conn->close();
         }
         ?>
     </div>
