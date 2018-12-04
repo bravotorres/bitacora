@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-// session_start();
+session_start();
 date_default_timezone_set('Mexico/General');
 ?>
 <html lang="es">
@@ -17,84 +17,78 @@ date_default_timezone_set('Mexico/General');
     <link href="css/panelAdmin.css" rel="stylesheet" id="bootstrap-csss">
 </head>
 <body id="PanelAdmin">
-    <div class="container">
-        <!-- Panel central -->
-        <div class="login-form">
-            <div class="main-div">
-                <div class="panel">
-                    <h2>Panel Admin</h2>
-                </div>
+<div class="container">
+    <!-- Panel central -->
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <h2>Panel Admin</h2>
+            </div>
 
+            <form method="post" action="#" role="form">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                include ("util.php");
 
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellidos</th>
-                            <th scope="col">Correo Electrónico</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-<?php
-include ("util.php");
+                $usuarios = "SELECT id, nombre, primer_apellido, segundo_apellido, email, id_status FROM usuarios";
+                $result   = $conn->query($usuarios);
+                $rows     = $result->num_rows;
 
-$usuarios = "SELECT id, nombre, primer_apellido, segundo_apellido, email, id_status FROM usuarios";
-$result   = $conn->query($usuarios);
-$rows = $result->num_rows;
+                for ($i=1; $i < $rows; $i++) {  // ID = 1 es el Administrador
+                    $result->data_seek($i);
+                    $row = $result->fetch_array(MYSQLI_ASSOC);
+                    // while ($row = mysql_fetch_array($result)) {
 
-print("<br><div class='alert alert-success font' role='alert'>$usuarios <br> Resultados: $rows</div>");
+                    print("<tr>");
+//                    print("<th scope='row'>$i</th>");
+                    print("<td>".$row['id']."</td>");
+                    print("<td>".$row['primer_apellido']." ".$row['segundo_apellido'].", ".$row['nombre']."</td>");
+                    print("<td>".$row['email']."</td>");
 
-for ($i=0; $i<$rows; $i++) {
-    $result->data_seek($i);
-    $row = $result->fetch_array(MYSQLI_ASSOC);
-    // while ($row = mysql_fetch_array($result)) {
-	
-    print("<tr>");
-    print("<th scope='row'>$i</th>");
-	print("<td>".$row['id']."</td>");
-	print("<td>".$row['nombre']."</td>");
-	print("<td>".$row['primer_apellido']." ".$row['segundo_apellido']."</td>");
-	print("<td>".$row['email']."</td>");
-	
-    if ($row['id_status'] == "1") {
-        print("<td><input type='checkbox' name='status_'".$row['id_status']."' checked> </td>");
-    }else{
-        print("<td><input type='checkbox' name='status_'".$row['id_status']."' > </td>");
-    }
-    print("</tr>");
+                    if ($row['id_status'] == "1") {
+                        print("<td><input type='checkbox' name='status_'".$row['id_status']."' checked> </td>");
+                    } else {
+                        print("<td><input type='checkbox' name='status_'".$row['id_status']."' > </td>");
+                    }
+                    print("</tr>");
 
-	// print("<td name='$status_id"."_"."$i'>".
-	//     "<div class="input-group mb-3">".
-	//     "<div class="input-group-prepend">".
-	//     "<div class="input-group-text">".
-	//     "<input type="checkbox" aria-label="CHBX">".
-	//     "</div>".
-	//     "</div>".
-	//     "</div>".
-	//     "</td>");
-}
+                    // print("<td name='$status_id"."_"."$i'>".
+                    //     "<div class="input-group mb-3">".
+                    //     "<div class="input-group-prepend">".
+                    //     "<div class="input-group-text">".
+                    //     "<input type="checkbox" aria-label="CHBX">".
+                    //     "</div>".
+                    //     "</div>".
+                    //     "</div>".
+                    //     "</td>");
+                }
 
-// if (isset($_POST['registrar'])) {
-//     $machine = $_POST['machine'];
-//     $comment = $_POST['comment'];
-//     $update = "UPDATE registro SET
-//     hora_salida=now(),
-//     maquina='$machine',
-//     comentario='$comment'
-//     WHERE id='$idregistro' and date(hora_entrada)=date(now())";
+                // if (isset($_POST['registrar'])) {
+                //     $machine = $_POST['machine'];
+                //     $comment = $_POST['comment'];
+                //     $update = "UPDATE registro SET
+                //     hora_salida=now(),
+                //     maquina='$machine',
+                //     comentario='$comment'
+                //     WHERE id='$idregistro' and date(hora_entrada)=date(now())";
 
-//     $result = $conn->query($update);
-//     print("<br><div class='alert alert-success font' role='alert'>Buen dia $name su hora  de salida se ha registrado: $datetimenow  ,<a href='deletesession.php'> <b>has click aqui para terminar</b></a></div>");
-// }
-?>
-
-</tbody>
-               </table>
-           </div>
-       </div>
-   </div>
+                //     $result = $conn->query($update);
+                //     print("<br><div class='alert alert-success font' role='alert'>Buen dia $name su hora  de salida se ha registrado: $datetimenow  ,<a href='deletesession.php'> <b>has click aqui para terminar</b></a></div>");
+                // }
+                ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 </body>
 </html>

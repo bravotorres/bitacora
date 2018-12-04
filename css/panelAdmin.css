@@ -21,6 +21,10 @@ textarea.form-control{
 	height: auto !important;
 }
 
+th {
+    text-align: center !important;
+}
+
 .form-heading {
     color:#fff;
     font-size:23px;
