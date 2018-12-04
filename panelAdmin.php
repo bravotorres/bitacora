@@ -29,6 +29,7 @@ date_default_timezone_set('Mexico/General');
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">ID</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Apellidos</th>
@@ -42,20 +43,29 @@ include ("util.php");
 
 $usuarios = "SELECT id, nombre, primer_apellido, segundo_apellido, email, id_status FROM usuarios";
 $result   = $conn->query($usuarios);
-// $rows = $result->num_rows;
+$rows = $result->num_rows;
 
 print("<br><div class='alert alert-success font' role='alert'>$usuarios <br> Resultados: $rows</div>");
 
-// for ($i=0; $i<$rows; $i++) {
-//     $result->data_seek($i);
-//     $row = $result->fetch_array(MYSQLI_ASSOC);
-while ($row = mysql_fetch_array($result)) {
-	print("<th scope='row'>$i</th>");
+for ($i=0; $i<$rows; $i++) {
+    $result->data_seek($i);
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    // while ($row = mysql_fetch_array($result)) {
+	
+    print("<tr>");
+    print("<th scope='row'>$i</th>");
 	print("<td>".$row['id']."</td>");
 	print("<td>".$row['nombre']."</td>");
 	print("<td>".$row['primer_apellido']." ".$row['segundo_apellido']."</td>");
 	print("<td>".$row['email']."</td>");
-	print("<td>".$row['id_status']."</td>");
+	
+    if ($row['id_status'] == "1") {
+        print("<td><input type='checkbox' name='status_'".$row['id_status']."' checked> </td>");
+    }else{
+        print("<td><input type='checkbox' name='status_'".$row['id_status']."' > </td>");
+    }
+    print("</tr>");
+
 	// print("<td name='$status_id"."_"."$i'>".
 	//     "<div class="input-group mb-3">".
 	//     "<div class="input-group-prepend">".
@@ -80,6 +90,7 @@ while ($row = mysql_fetch_array($result)) {
 //     print("<br><div class='alert alert-success font' role='alert'>Buen dia $name su hora  de salida se ha registrado: $datetimenow  ,<a href='deletesession.php'> <b>has click aqui para terminar</b></a></div>");
 // }
 ?>
+
 </tbody>
                </table>
            </div>

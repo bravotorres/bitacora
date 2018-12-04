@@ -1,6 +1,6 @@
 <?php
-session_start();
-if (isset($_SESSION['eMail']) and isset($_SESSION['Pass'])) {
+// session_start();
+// if (isset($_SESSION['eMail']) and isset($_SESSION['Pass'])) {
 	
 
 
@@ -27,11 +27,12 @@ if (isset($_SESSION['eMail']) and isset($_SESSION['Pass'])) {
 	   }
 	 </style>
 	 <meta charset="utf-8" />
+	 <link rel="icon" href="images/ipn.png">
 	 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body class="bg">
 <?php
-include "util.php";
+include("util.php");
 $conn->query("SET NAMES 'utf8'"); 
 ?>
 	
