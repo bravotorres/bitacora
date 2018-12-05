@@ -62,7 +62,7 @@
                     session_start();
                     $_SESSION['eMail'] = $email;
                     $_SESSION['Pass'] = $pass;
-                    header('location: panelAdmin.php');
+                    header('location: activarUsuario.php');
                 } else {
                     print("<br><br><br><div class='alert alert-warning' role='alert'>Su correo electrónico o contraseña son invalidos.</div>");
                 }

@@ -11,6 +11,7 @@ date_default_timezone_set('Mexico/General');
     <title>Bitácora - Panel del Administrador</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/panelAdmin.js"></script>
 
     <link rel="icon" href="images/ipn.png">
     <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -55,9 +56,9 @@ date_default_timezone_set('Mexico/General');
                     print("<td>".$row['email']."</td>");
 
                     if ($row['id_status'] == "1") {
-                        print("<td><input type='checkbox' name='status_'".$row['id_status']."' checked> </td>");
+                        print("<td><input type='checkbox' id='status_".$row['id_status']."' checked> </td>");
                     } else {
-                        print("<td><input type='checkbox' name='status_'".$row['id_status']."' > </td>");
+                        print("<td><input type='checkbox' id='status_".$row['id_status']."' > </td>");
                     }
                     print("</tr>");
 
@@ -87,6 +88,9 @@ date_default_timezone_set('Mexico/General');
                 ?>
                 </tbody>
             </table>
+            <button type="button" id="guardar" class="btn btn-default">
+                <span>Guardar</span>
+            </button>
         </div>
     </div>
 </div>
