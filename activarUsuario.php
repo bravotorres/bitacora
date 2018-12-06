@@ -1,120 +1,143 @@
-<?php
-// session_start();
-// if (isset($_SESSION['eMail']) and isset($_SESSION['Pass'])) {
-
-
-?>
 <!DOCTYPE html>
+<?php
+session_start();
+date_default_timezone_set('Mexico/General');
+?>
 <html lang="es">
 <head>
-    <title>...::ACTIVAR USUARIO::...</title>
-    <style type="text/css">
-        .bg {
-            background-image: url("images/bg6.jpg");
-            background-repeat: no-repeat;
-            background-size: 100% 200%;
-        }
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
-        .noresize {
-            resize: none;
-        }
+    <title>Bitácora - Administrador</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/panelAdmin.js"></script>
 
-        .font {
-            font-size: 150%
-        }
-
-        .bo {
-            font-weight: bold;
-            font-size: 3em;
-        }
-    </style>
-    <meta charset="utf-8"/>
     <link rel="icon" href="images/ipn.png">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/panelAdmin.css" rel="stylesheet" id="bootstrap-csss">
 </head>
-<body class="bg">
-<?php
-include("util.php");
-$conn->query("SET NAMES 'utf8'");
-?>
-
+<body id="PanelAdmin">
 <div class="container">
-    <form action="activarUsuario.php" method="POST" name="form" id="form">
-        <br><br><br>
-        <div class="row">
-            <div class="col-md-12"><h1 class="bo">Activación de usuario</h1><br><br><br></div>
+    <!-- Panel central -->
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <h1>Activción de Ususarios.</h1>
+            </div>
 
-            <div class="col-md-4">
-                <label>Buscar usuario:</label>
-                <select name="usuario" id="usuario">
-                    <option>Elige un usuario.</option>
-                    <?php
+            <form action="#" method="POST" name="form" id="form">
+                <div class="row">
 
-                    $consulta = "SELECT 
-                        UPPER(id) idusuarios, UPPER(username) username, UPPER(primer_apellido) apaterno, UPPER(segundo_apellido) amaterno 
-                      FROM usuarios where id_status=2 ORDER BY username ASC";
-                    $res = $conn->query($consulta) or die (mysql_error());
+                    <div class="col-md-4">
+                        <label>Buscar usuario:</label>
+                        <select name="usuario" id="usuario">
+                            <option>Elige un usuario.</option>
 
-                    print("<br><br><br><div class='alert alert-success' role='alert'>$consulta</div>");
+                            <?php
+                            include ("util.php");
+                            $consulta = "SELECT 
+                                  UPPER(id) idusuarios, 
+                                  UPPER(username) username, 
+                                  UPPER(primer_apellido) apaterno, 
+                                  UPPER(segundo_apellido) amaterno 
+                                FROM usuarios where id_status=2 ORDER BY username ASC";
 
-                    $filas = $res->num_rows;
+                            $res = $conn->query($consulta);
 
-                    for ($j = 0; $j < $filas; ++$j) {
-                        $res->data_seek($j);
-                        $fila = $res->fetch_array(MYSQLI_ASSOC);
-                        $id = $fila['idusuarios'];
-                        $nombre = $fila['username'];
-                        $apaterno = $fila['apaterno'];
-                        $amaterno = $fila['amaterno'];
-                        print("<option id='' value='".$id."'>".$nombre." ".$apaterno." ".$amaterno."</option>");
+                            print("<br><br><br><div class='alert alert-success' role='alert'>$consulta</div>");
+
+                            $filas = $res->num_rows;
+
+                            for ($j=0; $j<$filas; ++$j) {
+                                $res->data_seek($j);
+                                $fila = $res->fetch_array(MYSQLI_ASSOC);
+                                $id = $fila['idusuarios'];
+                                $nombre = $fila['username'];
+                                $apaterno = $fila['apaterno'];
+                                $amaterno = $fila['amaterno'];
+                                print("<option id='' value='".$id."'>".$nombre." ".$apaterno." ".$amaterno."</option>");
+                            }
+
+                            ?>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-lg" type="submit" name="busca" id="busca">Activar Usuario</button>
+                        <br><br><br>
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- <form method="post" action="#" role="form"> -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                include ("util.php");
+
+                $usuarios = "SELECT id, nombre, primer_apellido, segundo_apellido, email, id_status FROM usuarios";
+                $result   = $conn->query($usuarios);
+                $rows     = $result->num_rows;
+
+                for ($i=1; $i < $rows; $i++) {  // ID = 1 es el Administrador
+                    $result->data_seek($i);
+                    $row = $result->fetch_array(MYSQLI_ASSOC);
+                    // while ($row = mysql_fetch_array($result)) {
+
+                    print("<tr>");
+//                    print("<th scope='row'>$i</th>");
+                    print("<td>".$row['id']."</td>");
+                    print("<td>".$row['primer_apellido']." ".$row['segundo_apellido'].", ".$row['nombre']."</td>");
+                    print("<td>".$row['email']."</td>");
+
+                    if ($row['id_status'] == "1") {
+                        print("<td><input type='checkbox' id='status_".$row['id_status']."' checked> </td>");
+                    } else {
+                        print("<td><input type='checkbox' id='status_".$row['id_status']."' > </td>");
                     }
+                    print("</tr>");
 
-                    ?>
-                </select>
-            </div>
-            <div class="col-md-4">
-                <button class="btn btn-primary btn-lg" type="submit" name="busca" id="busca">Activar Usuario</button>
-                <br><br><br>
-            </div>
+                    // print("<td name='$status_id"."_"."$i'>".
+                    //     "<div class="input-group mb-3">".
+                    //     "<div class="input-group-prepend">".
+                    //     "<div class="input-group-text">".
+                    //     "<input type="checkbox" aria-label="CHBX">".
+                    //     "</div>".
+                    //     "</div>".
+                    //     "</div>".
+                    //     "</td>");
+                }
 
+                // if (isset($_POST['registrar'])) {
+                //     $machine = $_POST['machine'];
+                //     $comment = $_POST['comment'];
+                //     $update = "UPDATE registro SET
+                //     hora_salida=now(),
+                //     maquina='$machine',
+                //     comentario='$comment'
+                //     WHERE id='$idregistro' and date(hora_entrada)=date(now())";
+
+                //     $result = $conn->query($update);
+                //     print("<br><div class='alert alert-success font' role='alert'>Buen dia $name su hora  de salida se ha registrado: $datetimenow  ,<a href='deletesession.php'> <b>has click aqui para terminar</b></a></div>");
+                // }
+                ?>
+
+                </tbody>
+            </table>
+            <button type="button" id="guardar" class="btn btn-default">
+                <span>Guardar</span>
+            </button>
         </div>
-    </form>
-
-    <?php
-    if (isset($_POST['busca'])) {
-        $idusuario = $_POST['usuario'];
-        $actualiza = "UPDATE usuarios SET id_status=1 WHERE id='$idusuario'";
-
-        $result = $conn->query($actualiza);
-        print("<div class='alert alert-success'>$actualiza</div> ");
-
-        if ($result = 1) {
-            print("<div class='alert alert-success'>Usuario Activado...</div> ");
-        } else {
-            print("<div class='alert alert-warning'>No hay usuario por activar....</div> ");
-        }
-
-
-    }
-    ?>
-
-    <div>
-        <br><br><br>
-        <a class="btn btn-default btn-lg" href="index.php"><span class="glyphicon glyphicon-home"
-                                                                 aria-hidden="true"><br>Home</a>
-        <a class="btn btn-default btn-lg" href="activarUsuario.php"><span class="glyphicon glyphicon-user"
-                                                                          aria-hidden="true"><br>Activar usuario</a>
-        <a class="btn btn-default btn-lg" href="loginAdmin.php"><span class="glyphicon glyphicon-queen"
-                                                                      aria-hidden="true"><br>Administrador</a>
-        <a class="btn btn-default btn-lg" href="deletesession.php"><span class="glyphicon glyphicon-off"
-                                                                         aria-hidden="true"><br>Cerrar Sesión</a>
     </div>
 </div>
-<?php //
-//}else{
-//	header("Location:index.php");
-//}
-//
-//?>
 </body>
 </html>
