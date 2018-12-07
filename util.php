@@ -12,8 +12,8 @@ Rev: Alejandro Bravo <navegonauta@gmail.com>
 $DB_HOST = 'localhost';
 $DB_NAME = 'bitacora';
 $DB_USER = 'root';
-// $DB_PASS = 'Alejandro_1';
-$DB_PASS =  'root';
+$DB_PASS = 'Alejandro_1';
+//$DB_PASS =  'root';
 
 $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 // $conn= mysqli_connect("localhost","root","EsCoMproyecto","login");

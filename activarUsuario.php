@@ -70,7 +70,7 @@ date_default_timezone_set('Mexico/General');
                 </div>
             </form>
 
-            <form method="post" action="#" role="form">
+            <form method="post" action="" role="form">
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -100,9 +100,9 @@ date_default_timezone_set('Mexico/General');
                     print("<td>".$row['email']."</td>");
 
                     if ($row['id_status'] == "1") {
-                        print("<td><input type='checkbox' name='opciones[]' id='status_".$row['id']."_".$row['id_status']."' checked> </td>");
+                        print("<td><input type='checkbox' name='opciones[]' value='status_".$row['id']."_1' checked> </td>");
                     } else {
-                        print("<td><input type='checkbox' name='opciones[]' id='status_".$row['id']."_".$row['id_status']."' > </td>");
+                        print("<td><input type='checkbox' name='opciones[]' value='status_".$row['id']."_2' > </td>");
                     }
                     print("</tr>");
 
@@ -137,17 +137,22 @@ date_default_timezone_set('Mexico/General');
 //                $stmtMU = $conn->prepare($queryMU);
 //                $stmtMU->execute();
 
-                if(!empty($_POST['opciones'])) {
+                if(isset($_POST['opciones'])) {
+                    print ("<h3>".sizeof($_POST['opciones'])."</h3>");
                     foreach($_POST['opciones'] as $checkU) {
                         try {
-                            print("<br><h3>STATUS: ".$checkU."</h3>");
+                            print ("<h1>$checkU</h1>");
+                            $nom = explode("_", $checkU);
+                            print("<br><h3>DB_ID: ".$nom[1].", STATUS: ".$nom[2]."</h3>");
                             //UPDATE only the values checked
-//                            $queryMU ="UPDATE usuarios SET id_status=1 WHERE id=".$checKU['id'];
-//                            $stmtMU = $conn->prepare($queryMU);
-//                            $stmtMU->execute();
+                            $query = "UPDATE usuarios SET id_status='".$nom[2]."' WHERE id='".$nom[1]."'";
+                            print("<br><br><br><div class='alert alert-success' role='alert'>$query</div>");
+                            $stmtMU = $conn->prepare($query);
+                            $stmtMU->execute();
                         } catch(PDOException $e){
                             $msg = 'Error: '.$e->getMessage();
                         }
+//                        header("Refresh:0");
                     }
                 }
                 ?>
