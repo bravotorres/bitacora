@@ -70,7 +70,7 @@ date_default_timezone_set('Mexico/General');
                 </div>
             </form>
 
-            <!-- <form method="post" action="#" role="form"> -->
+            <form method="post" action="#" role="form">
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -88,7 +88,7 @@ date_default_timezone_set('Mexico/General');
                 $result   = $conn->query($usuarios);
                 $rows     = $result->num_rows;
 
-                for ($i=1; $i < $rows; $i++) {  // ID = 1 es el Administrador
+                for ($i=1; $i<$rows; $i++) {  // ID = 1 es el Administrador
                     $result->data_seek($i);
                     $row = $result->fetch_array(MYSQLI_ASSOC);
                     // while ($row = mysql_fetch_array($result)) {
@@ -100,9 +100,9 @@ date_default_timezone_set('Mexico/General');
                     print("<td>".$row['email']."</td>");
 
                     if ($row['id_status'] == "1") {
-                        print("<td><input type='checkbox' id='status_".$row['id_status']."' checked> </td>");
+                        print("<td><input type='checkbox' name='opciones[]' id='status_".$row['id']."_".$row['id_status']."' checked> </td>");
                     } else {
-                        print("<td><input type='checkbox' id='status_".$row['id_status']."' > </td>");
+                        print("<td><input type='checkbox' name='opciones[]' id='status_".$row['id']."_".$row['id_status']."' > </td>");
                     }
                     print("</tr>");
 
@@ -129,13 +129,35 @@ date_default_timezone_set('Mexico/General');
                 //     $result = $conn->query($update);
                 //     print("<br><div class='alert alert-success font' role='alert'>Buen dia $name su hora  de salida se ha registrado: $datetimenow  ,<a href='deletesession.php'> <b>has click aqui para terminar</b></a></div>");
                 // }
+
+//                <input type="checkbox" value="menu_news" name="check_menus[]" />
+//                <input type="checkbox" value="menu_gallery" name="check_menus[]" />
+                //EMPTY ALL VALUES TO 0
+//                $queryMU ='UPDATE usuarios SET menu_news = 0, menu_gallery = 0, menu_events = 0, menu_contact = 0';
+//                $stmtMU = $conn->prepare($queryMU);
+//                $stmtMU->execute();
+
+                if(!empty($_POST['opciones'])) {
+                    foreach($_POST['opciones'] as $checkU) {
+                        try {
+                            print("<br><h3>STATUS: ".$checkU."</h3>");
+                            //UPDATE only the values checked
+//                            $queryMU ="UPDATE usuarios SET id_status=1 WHERE id=".$checKU['id'];
+//                            $stmtMU = $conn->prepare($queryMU);
+//                            $stmtMU->execute();
+                        } catch(PDOException $e){
+                            $msg = 'Error: '.$e->getMessage();
+                        }
+                    }
+                }
                 ?>
 
                 </tbody>
             </table>
-            <button type="button" id="guardar" class="btn btn-default">
+            <button type="submit" id="guardar" class="btn btn-default">
                 <span>Guardar</span>
             </button>
+            </form>
         </div>
     </div>
 </div>

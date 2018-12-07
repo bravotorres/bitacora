@@ -9,13 +9,13 @@ Rev: Alejandro Bravo <navegonauta@gmail.com>
 */
 
 // Parámetros  de la Base de Datos:
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'bitacora');
-define('DB_USER', 'root');
- // define('DB_PASS', 'Alejandro_1');
-define('DB_PASS', 'root');
+$DB_HOST = 'localhost';
+$DB_NAME = 'bitacora';
+$DB_USER = 'root';
+// $DB_PASS = 'Alejandro_1';
+$DB_PASS =  'root';
 
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 // $conn= mysqli_connect("localhost","root","EsCoMproyecto","login");
 
 if( !$conn ){
