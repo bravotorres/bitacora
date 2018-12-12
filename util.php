@@ -15,6 +15,12 @@ $DB_USER = 'root';
 $DB_PASS = 'Alejandro_1';
 //$DB_PASS =  'root';
 
+
+//$DB_HOST = 'localhost';
+//$DB_NAME = 'id8075360_bitacora';
+//$DB_USER = 'id8075360_root';
+//$DB_PASS = 'Alejandro_1';
+
 $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 // $conn= mysqli_connect("localhost","root","EsCoMproyecto","login");
 
