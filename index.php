@@ -181,7 +181,5 @@ date_default_timezone_set('Mexico/General');
     </div>
 </div>
 
-
-</div>
 </body>
 </html>

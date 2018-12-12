@@ -26,4 +26,4 @@ if( !$conn ){
     // print("<br><div class='alert alert-success font' role='alert'>Conectado a Base de Datos</div>");
 }
 
-?>
+

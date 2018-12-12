@@ -53,7 +53,6 @@
 
                 // $ctaUsuario = "SELECT idusuarios, alias, username, email, password FROM usuarios where  idusuarios=1 AND email='$email' AND password='$pass'";
                 $ctaUsuario = "SELECT id, username, email, password FROM usuarios where id=1 AND email='$email' AND password='$pass'";
-                print("<br><br><br><div class='alert alert-warning' role='alert'>$ctaUsuario</div>");
 
                 $result = $conn->query($ctaUsuario);
                 $rows = $result->num_rows;
@@ -84,35 +83,5 @@
         </div>
     </div>
 </div>
-
-<!--<div class="container">-->
-<!--    <form role="form" method="POST">-->
-<!--        <h1>Inicio de sesión</h1>-->
-<!--        <div class="form-grop">-->
-<!--            <label for="name">-->
-<!--                E-mail de Administrador:-->
-<!--            </label>-->
-<!--            <input width="100%" class="form-control" id="name" name="name" placeholder="Correo electrónico" type="text"-->
-<!--                   required>-->
-<!--            <br>-->
-<!--            <label for="pass">Cotnraseña:</label>-->
-<!--            <input class="form-control" id="pass" name="pass" placeholder="Contraseña" type="password" required>-->
-<!--            <br>-->
-<!--            <button type="submit" name="entrada" id="entrada" class="btn btn-success btn-lg">Entrada</button>-->
-<!--        </div>-->
-<!--    </form>-->
-<!--    <div class="col-md-6"></div>-->
-<!--    <div class="col-md-6">-->
-<!---->
-<!--    </div>-->
-<!--    <div class="col-md-6"></div>-->
-<!--    <div class="col-md-6">-->
-<!--        <br><br><br>-->
-<!--        <a class="btn btn-default btn-lg" href="index.php">-->
-<!--            <span class="glyphicon glyphicon-home" aria-hidden="true"><br>Home</a>-->
-<!--        <a class="btn btn-default btn-lg" href="creacionUsuario.php"><span class="glyphicon glyphicon-user"-->
-<!--                                                                           aria-hidden="true"><br>Crea usuario</a>-->
-<!--    </div>-->
-<!--</div>-->
 </body>
 </html>

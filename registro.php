@@ -30,12 +30,12 @@ date_default_timezone_set('Mexico/General');
             <form id="Login" role="form" action="" method="POST">
                 <!-- Campo: Número de Máquina -->
                 <div class="form-group">
-                    <label>Máquina:</label>
+                    <label for="machine">Máquina:</label>
                     <input type="number" class="form-control" id="mchine" name="machine" min="1" max="10" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Comentarios:</label>
+                    <label for="comment">Comentarios:</label>
                     <textarea class="form-control noresize" name="comment" id="comment" rows="3"></textarea>
                 </div>
 
