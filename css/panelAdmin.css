@@ -13,8 +13,8 @@ form{
 }
 
 label{
-	display: inherit !important;
-	text-align: left;
+	/*display: inherit;*/
+	/*text-align: left;*/
 }
 
 textarea.form-control{
@@ -79,7 +79,7 @@ th {
     border-color: #f0ad4e;
     color: #ffffff;
     font-size: 14px;
-    width: 100%;
+    width: 50%;
     height: 50px;
     line-height: 50px;
     padding: 0;

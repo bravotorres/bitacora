@@ -1,3 +1,5 @@
+# Archivos a ignorar
+
 .project
 .directory
 .idea/

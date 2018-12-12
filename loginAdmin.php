@@ -73,13 +73,13 @@
             <br/>
             <div class="btn-group">
                 <a class="btn btn-default btn-lg" href="creacionUsuario.php">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <br>Crear Usuario
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    <br>Home
                 </a>
-                <a class="btn btn-default btn-lg" href="loginAdmin.php">
-                    <span class="glyphicon glyphicon-queen" aria-hidden="true"></span>
-                    <br> Administrador
-                </a>
+<!--                <a class="btn btn-default btn-lg" href="loginAdmin.php">-->
+<!--                    <span class="glyphicon glyphicon-queen" aria-hidden="true"></span>-->
+<!--                    <br> Administrador-->
+<!--                </a>-->
             </div>
         </div>
     </div>

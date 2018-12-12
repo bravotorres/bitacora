@@ -24,7 +24,7 @@ date_default_timezone_set('Mexico/General');
         <div class="login-form">
             <div class="main-div">
                 <div class="panel">
-                    <h2>Inicio de sesión (index.php)</h2>
+                    <h1>Inicio de sesión</h1>
                     <p>Para generar el registro, ingrese su información.</p>
                 </div>
 
@@ -150,7 +150,7 @@ date_default_timezone_set('Mexico/General');
 
                             if($datetimeS == '0001-01-01 00:00:00') {
                                 // Redirección a la pagina de registro de bitacora
-                                header("Location: /bitacora/registro.php");
+                                header("Location: /registro.php");
                             }else{
                                 print("<br><div class='alert alert-danger font' role='alert'>Buen dia $name, su hora de salida ya habia sido registrada: $datetimeS </div>");
                             }

@@ -13,31 +13,15 @@
     <link href="css/creacionUsuario.css" rel="stylesheet" id="bootstrap-csss">
 
 </head>
-<!-- <head>
-    <meta charset="utf-8" />
-    <title>Bitácora - Creacion de usuario</title>
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <style type="text/css">
-    .bgimage2{
-        background-image: url("images/bg2.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%  200%;
-    }
-    /*.noresize{*/
-        /*resize: none;*/
-        /*}*/
-    </style>
-</head> -->
 <body id="creacionUsuario">
-     <div class="container">
-        <!-- Panel de Administrador ...-->
+<div class="container">
+    <!-- Panel de Administrador ...-->
 
-        <!-- Inicio de Sesión -->
-        <div class="login-form">
-            <div class="main-div">
-                <div class="panel">
-                    <form action="creacionUsuario.php" role="form" id="form" name="form" method="POST" >
+    <!-- Inicio de Sesión -->
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <form action="creacionUsuario.php" role="form" id="form" name="form" method="POST" >
                     <h1> <b>Creación de usuario</b></h1>
                     <hr>
                     <label >Nombre:<br>
@@ -45,21 +29,21 @@
                     </label>
                     <div class="form-group">
                         <label >Apellido Paterno:<br>
-                        <input class="form-control" id="aPaterno" name="aPaterno" placeholder="Apellido paterno" type="text" required>
-                    </label>
-                    <label >Apellido Materno:<br>
-                        <input class="form-control" id="aMaterno" name="aMaterno" placeholder="Apellido materno" type="text" required>
-                    </label>
+                            <input class="form-control" id="aPaterno" name="aPaterno" placeholder="Apellido paterno" type="text" required>
+                        </label>
+                        <label >Apellido Materno:<br>
+                            <input class="form-control" id="aMaterno" name="aMaterno" placeholder="Apellido materno" type="text" required>
+                        </label>
                     </div>
                     <br>
                     <label >Email:<br>
                         <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
                     </label>
-<!--                    <label >Alias:<br>-->
-<!--                        <input class="form-control" id="alias" name="alias" placeholder="Alias" type="text" required>-->
-<!--                    </label>-->
+                    <!--                    <label >Alias:<br>-->
+                    <!--                        <input class="form-control" id="alias" name="alias" placeholder="Alias" type="text" required>-->
+                    <!--                    </label>-->
                     <br>
-                    <h2><b>Contraseña</b></h2>
+<!--                    <h2><b>Contraseña</b></h2>-->
                     <hr>
                     <label >Contraseña:<br>
                         <input class="form-control" id="pass" name="pass" placeholder="Contraseña" type="password" required>
@@ -72,7 +56,7 @@
                 </form>
 
                 <br>
-                
+
                 <div class="btn-group">
                     <a class="btn btn-default btn-lg" href="index.php">
                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
@@ -86,11 +70,11 @@
 
 
 
-                </div>
             </div>
         </div>
     </div>
+</div>
 
 
-        </body>
-        </html>
+</body>
+</html>
