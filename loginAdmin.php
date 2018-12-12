@@ -71,7 +71,7 @@
             ?>
             <br/>
             <div class="btn-group">
-                <a class="btn btn-default btn-lg" href="creacionUsuario.php">
+                <a class="btn btn-default btn-lg" href="index.php">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                     <br>Home
                 </a>
