@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="306abfd2-b7a3-483f-9ca4-a1d9fe4e9757" name="Default" comment="Depuracion y recision de Código.">
+    <list default="true" id="306abfd2-b7a3-483f-9ca4-a1d9fe4e9757" name="Default" comment="Limpieza de códigos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginAdmin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
     <session id="2122771924">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -97,7 +96,8 @@
           <entry key="css" value="2" />
           <entry key="gitignore" value="4" />
           <entry key="js" value="2" />
-          <entry key="php" value="20" />
+          <entry key="md" value="1" />
+          <entry key="php" value="22" />
           <entry key="php_tmp" value="1" />
           <entry key="rnc" value="2" />
           <entry key="sql" value="5" />
@@ -107,7 +107,8 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="20" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="22" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="RNG Compact" value="2" />
           <entry key="SQL" value="4" />
@@ -119,16 +120,16 @@
           <entry key="css" value="7" />
           <entry key="gitignore" value="34" />
           <entry key="js" value="180" />
-          <entry key="php" value="785" />
-          <entry key="txt" value="59" />
+          <entry key="php" value="809" />
+          <entry key="txt" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="7" />
           <entry key="JavaScript" value="180" />
-          <entry key="PHP" value="765" />
-          <entry key="PLAIN_TEXT" value="93" />
+          <entry key="PHP" value="789" />
+          <entry key="PLAIN_TEXT" value="112" />
           <entry key="SQL" value="20" />
         </counts>
       </usages-collector>
@@ -157,20 +158,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-345">
-              <caret line="94" column="98" selection-start-line="94" selection-start-column="98" selection-end-line="94" selection-end-column="98" />
+            <state relative-caret-position="112">
+              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+              <folding>
+                <element signature="e#2322#4903#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loginAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+            <state relative-caret-position="173">
+              <caret line="73" column="65" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -188,7 +220,11 @@
     <findStrings>
       <find>update</find>
       <find>usuario</find>
+      <find>print(</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -197,6 +233,7 @@
         <option value="Alejandro Bravo Torres &lt;bravotorres.alejandro@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -216,8 +253,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/registro.php" />
         <option value="$PROJECT_DIR$/deletesession.php" />
-        <option value="$PROJECT_DIR$/util.php" />
         <option value="$PROJECT_DIR$/loginAdmin.php" />
+        <option value="$PROJECT_DIR$/util.php" />
       </list>
     </option>
   </component>
@@ -331,7 +368,7 @@
       <workItem from="1544066877189" duration="555000" />
       <workItem from="1544548115856" duration="640000" />
       <workItem from="1544548780481" duration="5986000" />
-      <workItem from="1544604096496" duration="1119000" />
+      <workItem from="1544604096496" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="Integracion con PHPStorm.">
       <created>1532387719817</created>
@@ -375,11 +412,39 @@
       <option name="project" value="LOCAL" />
       <updated>1544604873814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Limpieza de código">
+      <created>1544605326223</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1544605326223</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Limpieza de códigos">
+      <created>1544605599425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544605599425</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Limpieza de códigos">
+      <created>1544605708201</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544605708201</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Limpieza de códigos">
+      <created>1544606953893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544606953893</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26946000" />
+    <option name="totallyTimeSpent" value="28692000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +459,7 @@
     <frame x="0" y="-3" width="1600" height="880" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16110398" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16110398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -453,7 +518,9 @@
     <MESSAGE value="Integracion con PHPStorm." />
     <MESSAGE value="Integracion con PHPStorm.&#10;Nuevos cambios, minimos." />
     <MESSAGE value="Depuracion y recision de Código." />
-    <option name="LAST_COMMIT_MESSAGE" value="Depuracion y recision de Código." />
+    <MESSAGE value="Limpieza de código" />
+    <MESSAGE value="Limpieza de códigos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpieza de códigos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/51d0101e-6db6-4dcd-b087-47401a433fc9/console.sql" />
@@ -537,13 +604,6 @@
     <entry file="file://$PROJECT_DIR$/lib/bitacora-20180620.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/registro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deletesession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -551,27 +611,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3a66a852-85e6-4f16-989a-45f1fb5bc29b/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/registro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="94" column="98" selection-start-line="94" selection-start-column="98" selection-end-line="94" selection-end-column="98" />
+        <state relative-caret-position="109">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loginAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        <state relative-caret-position="173">
+          <caret line="73" column="65" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <element signature="e#2322#4903#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
