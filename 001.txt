@@ -1,0 +1,540 @@
+    1  sudo su
+    2  firefox
+    3  vim centos.sh
+    4  ls
+    5  cd /home/meine_apps/z_rpm/
+    6  ls
+    7  vi rpm_media.sh 
+    8  ./rpm_media.sh 
+    9  sudo ./rpm_media.sh 
+   10  firefox
+   11  ls
+   12  rpm -i epel-release-latest-7.noarch.rpm 
+   13  sudo rpm -i epel-release-latest-7.noarch.rpm 
+   14  ls
+   15  cd ..
+   16  ls
+   17  ll
+   18  cd z_config/
+   19  ls
+   20  cd ..
+   21  ls
+   22  cd z_icons/
+   23  ls
+   24  ln -sfv /usr/local/meine_apps/z_icons/Loli-Papelk/ /usr/share/icons/
+   25  sudo ln -sfv /usr/local/meine_apps/z_icons/Loli-Papelk/ /usr/share/icons/
+   26  cd 
+   27  cd Downloads/
+   28  ls
+   29  suro yum -y install google-chrome-stable_current_x86_64.rpm 
+   30  sudo yum -y install google-chrome-stable_current_x86_64.rpm 
+   31  cd ..
+   32  cd xela/
+   33  ls
+   34  g++ Coche.cxx -o Coche
+   35  ./Coche 
+   36  java -version
+   37  cd
+   38  ls -la
+   39  cd .config/
+   40  ls
+   41  ll
+   42  ls
+   43  cd sublime-text-3/
+   44  ls
+   45  cp -Rfv * /home/meine_apps/z_config/sublime-text-3/
+   46  cd
+   47  ls
+   48  cd .config/sublime-text-3/
+   49  ls
+   50  cp -Rfv * /home/meine_apps/z_config/sublime-text-3/
+   51  ll
+   52  cd ,,
+   53  cd ..
+   54  l
+   55  ls
+   56  cd ..
+   57  ls
+   58  ll
+   59  pwd
+   60  vi .vimrc 
+   61  sudo vi .vimrc 
+   62  sudo vi /root/.vimrc 
+   63  vi /root/.vimrc 
+   64  vi .vimrc 
+   65  sudo vi .vimrc 
+   66  vi .vimrc 
+   67  sudo vi .vimrc 
+   68  sudo vi /root/.vimrc 
+   69  vi .vimrc 
+   70  sudo du
+   71  sudo su
+   72  sudo su
+   73  cd
+   74  vim .esd_auth 
+   75  vi .vimrc 
+   76  vi -version
+   77  vi --version
+   78  vi -v
+   79  vim --version
+   80  sudo su
+   81  ls
+   82  cd Downloads/
+   83  ls
+   84  ./QuartusLiteSetup-18.1.0.625-linux.run 
+   85  sudo su
+   86  cd Downloads/
+   87  ./QuartusLiteSetup-18.1.0.625-linux.run 
+   88  quartus
+   89  ls
+   90  cd /opt/QuartusPrime/quartus/bin/
+   91  ls
+   92  ./quartus
+   93  cd
+   94  ls
+   95  cd repos/
+   96  ls
+   97  /home/meine_apps/gitkraken/gitkraken
+   98  yumlibcurl-gnutls  libcurl-gnutls
+   99  /home/meine_apps/gitkraken/gitkraken
+  100  /home/meine_apps/giteye/GitEye
+  101  dbeaver 
+  102  sudo su
+  103  sublime  /var/www/html/bitacora/
+  104  sublime /var/www/html/bitacora
+  105  mysql -V
+  106  apache -V
+  107  httpd -V
+  108  httpd -v
+  109  apachectl restart
+  110  cd /var/www/html/login/lib/
+  111  ls
+  112  mysql -u root -pAlejandro_1 login < login.sql 
+  113  cd /opt/QuartusPrime/
+  114  ls
+  115  rm -Rfv *
+  116  sudo su
+  117  cd /home/alex/repos/
+  118  cd bitacora
+  119  ls
+  120  cd lib/
+  121  ls
+  122  mysql -u root -pAlejandro_1 bitacora < login-201806251337.sql 
+  123  vi rpm_php_setup.sh
+  124  chmod 777 rpm_php_setup.sh 
+  125  sudo ./rpm_php_setup.sh 
+  126  php -v
+  127  php -V
+  128  php -
+  129  php
+  130  php -v
+  131  php72 -version
+  132  meld /home/alex/repos/bitacora /home/alex/git/bitacora/
+  133  history | grep mysql
+  134  cd /home/alex/repos/bitacora/lib/
+  135  ls
+  136  mysql -u root -pAlejandro_1 login < login.sql 
+  137  cd ..
+  138  ls
+  139  cd ..
+  140  ls
+  141  ln -sfv /home/alex/repos/bitacora/ /var/www/html/
+  142  sudo ln -sfv /home/alex/repos/bitacora/ /var/www/html/
+  143  sudo su
+  144  cd ..
+  145  cd
+  146  cd git/
+  147  ls
+  148  cd bitacora/
+  149  ll
+  150  git sstatus
+  151  git status
+  152  meld . ../../repos/bitacora
+  153  /home/meine_apps/meld-3.18.1/meld . ../../repos/bitacora
+  154  /home/meine_apps/meld-3.18.1/bin/meld . ../../repos/bitacora
+  155  python3
+  156  sudo yum -y install python3 
+  157  yum search python3
+  158  sudo yum -y install python34
+  159  python3
+  160  /home/meine_apps/meld-3.18.1/bin/meld . ../../repos/bitacora
+  161  sudo yum -y install meld
+  162  meld . ../../repos/bitacora
+  163  cd /usr/local/meine_apps/
+  164  ls
+  165  ln -sfv /usr/local/meine_apps/dbeaver/dbeaver /usr/bin/
+  166  sudo su
+  167  cd /var/www/html/
+  168  ls
+  169  cd bitacora/
+  170  git status
+  171  git add .
+  172  git status
+  173  cat .git/config 
+  174  git fetch && git checkout
+  175  git status
+  176  mysql -u root -pAlejandro_1
+  177  git status
+  178  git -v
+  179  git --verrsion
+  180  git --version
+  181  git status
+  182  service statsu mysqld
+  183  service mysqld status
+  184  mysql -u root -pAlejandro_1
+  185  python
+  186  sudo su
+  187  sudo vi ~/.bashrc 
+  188  sudo su
+  189  source /home/alex/.bashrc 
+  190  sudo su
+  191  ll
+  192  ls -la
+  193  sudo su
+  194  sudo su
+  195  cd Downloads/
+  196  tar -xvf FileZilla_3.39.0_x86_64-linux-gnu.tar.bz2 -C /usr/local/meine_apps/
+  197  cd /usr/local/meine_apps/FileZilla3/
+  198  ls
+  199  cd bin/
+  200  ls
+  201  sudo ln -sfv /usr/local/meine_apps/FileZilla3/bin/filezilla /usr/bin/
+  202  filezilla 
+  203  sudo yum -y install libpng16
+  204  sudo su
+  205  cd /home/alex/repos/
+  206  ls
+  207  cd bitacora
+  208  git status
+  209  pwd
+  210  cd /run/media/alex/TeraSmall/Data/+DevPack/
+  211  cd ..
+  212  cd +\ Development/
+  213  ll
+  214  chmod 775 *
+  215  ll
+  216  cd Counter
+  217  ls
+  218  ./Counter.py 
+  219  vi cou
+  220  vi Counter.py 
+  221  vi ~/.vimrc 
+  222  sudo vi ~/.vimrc 
+  223  sudo vi /root/.vimrc 
+  224  vi Counter.py 
+  225  sudo vi ~/.vimrc 
+  226  sudo vi /root/.vimrc 
+  227  vi Counter.py 
+  228  ./Ingresar.py
+  229  ./Ingresar.pyc 
+  230  python Ingresar.pyc 
+  231  ./Counter.py 
+  232  vi Counter.py 
+  233  vi Ingresar.py
+  234  cd ..
+  235  ls
+  236  cd ..
+  237  ls
+  238  sudo su
+  239  vi ~/.bashrc 
+  240  sudo vi ~/.bashrc 
+  241  sudo vi /root/.bashrc 
+  242  sudo su
+  243  sudo vi ~/.bashrc 
+  244  source ~/.bashrc 
+  245  sudo vi ~/.bashrc 
+  246  source ~/.bashrc 
+  247  rvm
+  248  rvm -v
+  249  ruby -v
+  250  irb -v
+  251  cd repos/ruby
+  252  ls
+  253  sudo vi setup_rhel.sh 
+  254  ls
+  255  sudo su
+  256  sudo su
+  257  pwd
+  258  ll
+  259  cd
+  260  cd Downloads/
+  261  ls
+  262  ll
+  263  chmod 777 Visual_Paradigm_15_2_20181203_Linux64.sh 
+  264  ./Visual_Paradigm_15_2_20181203_Linux64.sh 
+  265  sudo su
+  266  ruby -v
+  267  rvm use 2.2.4 --default
+  268  sudo su
+  269  rails -v
+  270  sudo su
+  271  sudo chown -Rfv alex:alex . && chmod -Rfv 775 .
+  272  cd repos/ruby
+  273  sudo chown -Rfv alex:alex . && chmod -Rfv 775 .
+  274  ll
+  275  ls -la
+  276  sudo chown -Rfv alex:alex . && chmod -Rfv 775 .
+  277  ll
+  278  ls -la
+  279  rails -v
+  280  rails _3.2.9_ new HolaMundo
+  281  ruby -v
+  282   rvm use 2.2.4 --default
+  283  sudo ./setup_rhel.sh 
+  284  ruby -v
+  285  rvm -v
+  286  rails -v
+  287  rails new HolaMundo
+  288  sudo rails new HolaMundo
+  289  rails new HolaMundo
+  290  sudo bundle install --path vendor/bundle
+  291  bundle install --path vendor/bundle
+  292  cd HolaMundo/
+  293  bundle install --path vendor/bundle
+  294  cd /var/www/html/
+  295  ls
+  296  sublime .
+  297  sudo su
+  298  laravel new blog
+  299  ll
+  300  cd blog/
+  301  ll
+  302  ls -la *
+  303  ls *
+  304  cd..
+  305  cd ..
+  306  ls
+  307  php artisan serve
+  308  php blog serve
+  309  php blog/ serve
+  310  cd blog/
+  311  ll
+  312  php artisan serve
+  313  cd ..
+  314  ls
+  315  rm -Rfv blog/
+  316  laravel new curso-styde
+  317  sudo su
+  318  python
+  319  ls -la
+  320  cd .kde/
+  321  ls
+  322  ll
+  323  cat Autostart/
+  324  cd Autostart/
+  325  ls
+  326  ll
+  327  ./backlight.sh 
+  328  cd ..
+  329  ls
+  330  ls -la
+  331  cd ..
+  332  mv .kde/ .kde.old
+  333  ll
+  334  ls -la
+  335  /home/meine_apps/z_scripts/backlight.sh
+  336  ls -la /
+  337  python
+  338  sudo su
+  339  cd repos/django_tech_test/
+  340  ls
+  341  virtualenv-2
+  342  virtualenv-2 -V
+  343  virtualenv-2 -v
+  344  virtualenv-2 --version
+  345  virtualenv-2.7 --version
+  346  virtualenv --version
+  347  ls
+  348  ll
+  349  ls -la
+  350  virtualenv test --python=python3
+  351  rm -Rfv test/
+  352  ls -la
+  353  sudo su
+  354  source test/bin/activate
+  355  ls
+  356  ./manage.py runserver 8081
+  357  sublime .
+  358  ./manage.py migrate
+  359  ./manage.py runserver 8081
+  360  ./manage.py createuser
+  361  ./manage.py createsuperuser
+  362  ./manage.py runserver 8081
+  363  sudo su
+  364  cd /home/meine_apps/z_scripts/
+  365  ls
+  366  ./ksuperkey 
+  367  python3
+  368  cd
+  369  sudo su
+  370  cd repos/
+  371  ls
+  372  cd django_tech_test/
+  373  git status
+  374  git fetch && it checkout
+  375  git fetch && git checkout
+  376  git
+  377  git fetch && git checkout
+  378  git pull
+  379  ls
+  380  vi setup.py
+  381  stty
+  382  stty intr ^C
+  383  python
+  384  stty intr ^C
+  385  stty -a
+  386  tty -a
+  387  tty -l
+  388  tty
+  389  sudo suç
+  390  sudo su
+  391  stty -a
+  392  stty intr ^C
+  393  python
+  394  sudo su
+  395  python37
+  396  sudo su
+  397  ls -la
+  398  sudo su
+  399  sudo killall -9 goland
+  400  sudo su
+  401  cd /home/meine_apps/z_scripts/
+  402  ls
+  403  ./backlight.sh 
+  404  python -V
+  405  python37 -V
+  406  python37
+  407  python
+  408  gcc
+  409  gcc -V
+  410  gcc -v
+  411  gcc --version
+  412  gpp --version
+  413  g++ --version
+  414  sudo yum -y install gcc-go
+  415  g++ --versiongo
+  416  go
+  417  gcc-go
+  418  goland
+  419  goland -V
+  420  goland -v
+  421  goland ---version
+  422  goland --version
+  423  ls
+  424  rm -Rfv FreeBSD
+  425  cd
+  426  cd Down
+  427  cd Downloads/
+  428  ls -la *.iso
+  429  rm -Rfv *.iso
+  430  cd /run/media/alex/16\ GB/eBooks/
+  431  ls
+  432  cd ESCOM/
+  433  ls
+  434  rm -Rfv +Curso\ ESFM\ 2012* ESCOM* mapaCurricularISC-ESCOM_2012.pdf  Periodo\ 0* Sobrecupos.docx 
+  435  cd repos/
+  436  ls
+  437  git clone https://github.com/navegonauta/kassandra.git
+  438  cd kassandra/
+  439  ls
+  440  git checkout
+  441  git status
+  442  git checkout develop
+  443  git fetch && git checkout
+  444  git pull
+  445  ls
+  446  ll
+  447  cd ..
+  448  git clone https://github.com/navegonauta/juno.git -b develop
+  449  ls
+  450  cd juno/
+  451  ls
+  452  git fetch && git checkout
+  453  git pull
+  454  ll
+  455  git status
+  456  ls
+  457  cd ..
+  458  ls
+  459  git clone https://github.com/navegonauta/doc_adoo.git -b develop
+  460  git clone https://github.com/navegonauta/doc_adoo.git
+  461  cd doc_adoo/
+  462  ls
+  463  git status
+  464  git fetch && git checkout; git pull
+  465  git status
+  466  git checkout develop; git fetch && git checkout; git pull
+  467  git checkout develop; git fetch && git checkout; git pull; git status
+  468  cd ..
+  469  git clone https://github.com/navegonauta/escom.git
+  470  cd escom/
+  471  ls
+  472  git status
+  473  cd ..
+  474  ls
+  475  cd media_soft
+  476  git fetch && git checkout; git pull; git status
+  477  cd ..
+  478  ls
+  479  cd media_soft-doc/
+  480  git fetch && git checkout; git pull; git status
+  481  cd ..
+  482  cd core_solutions
+  483  ls
+  484  git fetch && git checkout; git pull; git status
+  485  git checkout Luisfis-patch-1; git fetch && git checkout; git pull; git status
+  486  ls
+  487  git status
+  488  git checkout Luisfis-patch-1; git fetch && git checkout; git pull; git status;
+  489  git checkout Luisfls-patch-1; git fetch && git checkout; git pull; git status;
+  490  git status
+  491  git checkout PHP_restore; git fetch && git checkout; git pull; git status;
+  492  git status
+  493  git fetch && git checkout; git pull; git status;
+  494  cd ..
+  495  cd scripts/
+  496  ls
+  497  git fetch && git checkout; git pull; git status;
+  498  git status
+  499  cd ../core_solutions-doc/
+  500  git fetch && git checkout; git pull; git status;
+  501  cd ../demo_dashboard/
+  502  ls
+  503  git status
+  504  git fetch && git checkout; git pull; git status;
+  505  git checkout develop; git fetch && git checkout; git pull; git status;
+  506  cd ..
+  507  cd vhdl
+  508  ls
+  509  git status
+  510  git add .
+  511  git status
+  512  git commit -m "Actualizaciones de fin de curso."
+  513  git fetch && git checkout; git pull; git status;
+  514  cd ..
+  515  cd compiladores/
+  516  ls
+  517  git fetch && git checkout; git pull; git status;
+  518  cd ..
+  519  ls
+  520  ls -la
+  521  cd bitacora
+  522  ls
+  523  pwd
+  524  git status
+  525  git add .; git commit -m "Ultimos Cambios."
+  526  git status
+  527  cat .git/config 
+  528  git fetch && git checkout; git pull; git status;
+  529  cd ..
+  530  cd curri
+  531  git fetch && git checkout; git pull; git status;
+  532  cd bitacora
+  533  git status
+  534  python37 -v
+  535  python37 -V
+  536  python37
+  537  ll
+  538  php -V
+  539  php -v
+  540  history >> 001.txt 

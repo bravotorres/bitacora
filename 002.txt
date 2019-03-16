@@ -1,0 +1,774 @@
+    1  yum remove firefox
+    2  cd /home/
+    3  ln -sfv /home/meine_apps/ /usr/local/
+    4  cd /usr/local/meine_apps/
+    5  ls
+    6  ln -sfv /usr/local/meine_apps/firefox/firefox /usr/bin/
+    7  ln -sfv /usr/local/meine_apps/firefox/firefox.desktop /usr/share/applications/
+    8  cd firefox/
+    9  ls
+   10  cd /usr/local/meine_apps/firefox/browser/chrome/icons/default/
+   11  ls -la
+   12  vi /usr/local/meine_apps/firefox/firefox.desktop 
+   13  ls -la
+   14  cd ..
+   15  cd 
+   16  cd 
+   17  cd ..
+   18  ls
+   19  cd /usr/local/meine_apps/
+   20  ll
+   21  ln -sfv /usr/local/meine_apps/firefox/firefox.desktop /usr/share/applications/
+   22  whereis firefox
+   23  ls -sfv /usr/bin/firefox 
+   24  ls -la /usr/bin/firefox 
+   25  cd /usr/local/meine_apps/firefox/
+   26  ls
+   27  ln -sfv /usr/local/meine_apps/firefox/firefox /usr/bin/firefox
+   28  ln -sfv /usr/local/meine_apps/firefox/firefox.desktop /usr/share/applications/
+   29  ls -la firefox.desktop 
+   30  ll
+   31  chmod -Rf 775 . && chown -Rf alex:alex .
+   32  ll
+   33  ln -sfv /usr/local/meine_apps/firefox/firefox /usr/bin/firefox
+   34  ln -sfv /usr/local/meine_apps/firefox/firefox.desktop /usr/share/applications/
+   35  yum install -y update
+   36  yum install -y ugrade
+   37  yum search c++
+   38  yum install -y gcc
+   39  gcc --version
+   40  g++ --version
+   41  gcc-c++ --version
+   42  cc --version
+   43  c++ --version
+   44  cc --version
+   45  yum install -y gcc-c++
+   46  c++ --version
+   47  cd /home/alex/Downloads/
+   48  ls
+   49  tar -xvf sublime_text_3_build_3176_x64.tar.bz2 
+   50  ls
+   51  rpm install -y jdk-8u191-linux-x64.rpm 
+   52  yum install -y jdk-8u191-linux-x64.rpm 
+   53  java -version
+   54  rpm -i jdk-8u191-linux-x64.rpm 
+   55  java -version
+   56  update-alternatives 
+   57  update-alternatives configure java
+   58  update-alternatives alternatives --config java
+   59  update-alternatives --config java
+   60  java -version
+   61  update-alternatives --config javac
+   62  update-alternatives --config javaws
+   63  javaws -version
+   64  javaws -v
+   65  javaws -V
+   66  ls
+   67  rpm -i jdk-8u191-linux-x64-demos.rpm 
+   68  cd ..
+   69  cd ..
+   70  cd /usr/local/meine_apps/
+   71  ln -sfv /usr/local/meine_apps/sublime_text_3/sublime_text /usr/bin/sublime
+   72  ln -sfv /usr/local/meine_apps/sublime_text_3/sublime_text.desktop /usr/share/applications/
+   73  yum install -y texlive-full
+   74  yum search tex
+   75  yum
+   76  yum -y install texlive texlive-*
+   77  yum install texlive texlive-*
+   78  yum -y install texlive texlive-*
+   79  cd ..
+   80  ls
+   81  cd 
+   82  cd /home/
+   83  ls
+   84  cd xela/
+   85  ls
+   86  ls l-a
+   87  ls -la
+   88  cat .vimrc 
+   89  cp -fv .vimrc /home/alex/
+   90  cp -fv .vimrc /root/
+   91  curl -L https://copr.fedorainfracloud.org/coprs/mcepl/vim8/repo/epel-7/mcepl-vim8-epel-7.repo -o /etc/yum.repos.d/mcepl-vim8-epel-7.repo
+   92  yum upgrade vim
+   93  yum update vim*
+   94  curl -L https://copr.fedorainfracloud.org/coprs/mcepl/vim8/repo/epel-7/mcepl-vim8-epel-7.repo -o /etc/yum.repos.d/mcepl-vim8-epel-7.repo
+   95  yum update vim*
+   96  rm -Rfv /etc/yum.repos.d/mcepl-vim8-epel-7.repo 
+   97  yum update vim*
+   98  vi -V
+   99  ls -la /usr/share/vim/vimfiles/
+  100  ls -la /usr/share/vim/vimfiles/colors/
+  101  ls -la /usr/share/vim/vim74/colors/
+  102  dolphin /usr/share/vim/vim74/colors/
+  103  vi .vimrc 
+  104  vi .vimrc 
+  105  vi /root/.vimrc 
+  106  vi /root/.vimrc 
+  107  vim -v
+  108  ps -el | grep firefox
+  109  ps -el | grep fire
+  110  ln -sfv /usr/local/meine_apps/z_scripts/droidmote /usr/bin/droidmote
+  111  droidmote 2302 password
+  112  droidmote 2302 password
+  113  droidmote 2302 password
+  114  lshw
+  115  lshw -c Memory
+  116  yum install ntfs-3g
+  117  cd /home/alex/Downloads/
+  118  ls
+  119  tar -xvf qbittorrent-4.1.4.tar.gz 
+  120  cd qbittorrent-4.1.4/
+  121  ls
+  122  yum install -y qbittorrent
+  123  curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.rpm.sh | sudo bash
+  124  sudo yum -y install sysbench
+  125  sysbench
+  126  sysbench -h
+  127  sysbench -help
+  128  sysbench --help
+  129  cd /home/alex/Downloads/
+  130  chmod 777 unetbootin-linux64-661.bin 
+  131  ./unetbootin-linux64-661.bin 
+  132  yum -y install p7zip
+  133  ./unetbootin-linux64-661.bin 
+  134  yum -y install p7zip-full
+  135  yum search p7zip*
+  136  yum -y install p7zip*
+  137  ./unetbootin-linux64-661.bin 
+  138  yum search partitionmanager
+  139  yum search partition
+  140  cd Downloads/
+  141  ls
+  142  yum install kde-partitionmanager-1.1.0-2.1.x86_64.rpm 
+  143  cp -Rfv /var/plasma-backup/plasma* ~/.kde/share/config
+  144  sudo yum --enablerepo=extras install epel-release;
+  145  sudo yum install ntfs-3g -y;
+  146  yum install ntfs-3g fuse 
+  147  yum -y install ntfsprogs
+  148  ll
+  149  ls -la
+  150  yum search mysql
+  151  cd /home/alex/Downloads/
+  152  ls
+  153  yum install  mysql80-community-release-el7-1.noarch.rpm 
+  154  yum search mysql
+  155  yum install mysql-server
+  156  yum install mysql-community-server
+  157  mysql 
+  158  mysql -u root
+  159  mysql -u root -p
+  160  default
+  161  mysql -u root -p
+  162  yum remove mariadb-server
+  163  yum install mysql-server
+  164  mysql -u root -p
+  165  mysql -u root
+  166  mysql -V
+  167  sudo /etc/init.d/mysqld stop
+  168  yum -y install libpng12
+  169  yum -y install libkdecore 
+  170  yum search kdecore 
+  171  yum -y install kdelibs*
+  172  cd /home/
+  173  ls
+  174  cd xela/
+  175  ls
+  176  ln -sfv /home/xela/repos/ /home/alex/
+  177  yum search libcurl-gnutls
+  178  yum search libcurl
+  179  yum -y install libcurl
+  180  yum -y install libcurl-devel
+  181  yum search gnutls
+  182  yum -y install gnutls gnutls-devel
+  183  ps -el | grep git
+  184  cd
+  185  yum install -y php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-readline php7.2-xml
+  186  sudo grep 'temporary password' /var/log/mysqld.log
+  187  sudo mysql_secure_installation
+  188  sudo grep 'temporary password' /var/log/mysqld.log
+  189  systemctl start mysqld
+  190  sudo grep 'temporary password' /var/log/mysqld.log
+  191  mysql -u root -p
+  192  mysql -u root -pAlejandro_1
+  193  droidmote 2302 password
+  194  ls
+  195  cp bitacora /var/www/html/
+  196  cd /var/www/html/
+  197  ls
+  198  ll
+  199  rm bitacora/
+  200  rm -d bitacora/
+  201  rm -f bitacora/
+  202  rm -fv bitacora/
+  203  ll
+  204  chmod 775 . chown alex:alex .
+  205  kk
+  206  chmod 775 . && chown alex:alex .
+  207  ll
+  208  ls -la
+  209  yum install php php-mysql
+  210  yum install php php-mysql php-fpm
+  211  php -V
+  212  php -v
+  213  vi info.php
+  214  yum -y install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+  215  apachectl restart
+  216  vi /etc/httpd/conf.d/welcome.conf 
+  217  php -v
+  218  php72 -v
+  219  whereis php72
+  220  yum remove php72*
+  221  meld /var/www/html/bitacora/ /home/alex/repos/bitacora
+  222  ls
+  223  rm -Rf bitacora/
+  224  ln -sfv /home/alex/repos/bitacora /var/www/html/
+  225  ll
+  226  chmod -Rfv 775 . && chown -Rfv alex:alex .
+  227  chmod -Rfv 775 . && chown -Rfv alex:alex .
+  228  ls -la
+  229  cdbi
+  230  cd bitacora/
+  231  ls
+  232  ll
+  233  ln -sfv /var/www/html/bitacora/ /home/alex/repos/
+  234  cd /usr/local/meine_apps/
+  235  ls
+  236  ln -sfv /usr/local/meine_apps/giteye/GitEye /usr/bin/giteye
+  237  ln -sfv /usr/local/meine_apps/giteye/giteye.desktop /usr/share/applications/
+  238  ln -sfv /usr/local/meine_apps/dbeaver/dbeaver /usr/bin/
+  239  ln -sfv /usr/local/meine_apps/dbeaver/dbeaver.desktop /usr/share/applications/
+  240  yum install -y dbeaver
+  241  cd /home/alex/Downloads/
+  242  yum -y install dbeaver-ce-5.2.5-stable.x86_64.rpm 
+  243  dbeaver 
+  244  yum -y install httpd
+  245  systemctl httpd start
+  246  systemctl apache start 
+  247  sudo systemctl enable httpd.service
+  248  sudo systemctl restart httpd.service
+  249  history | grep mysql
+  250  history | grep mysql
+  251  droidmote 2302 password
+  252  sudo systemctl enable mysqld.service
+  253  yum install php php-mysql
+  254  yum install php-mysqlnd
+  255  sudo firewall-cmd --permanent --zone=public --add-service=http
+  256  sudo firewall-cmd --permanent --zone=public --add-service=https
+  257  sudo firewall-cmd --reload
+  258  systemctl mysqld.service restart
+  259  systemctl restrt mysql.service 
+  260  systemctl restart mysql.service 
+  261  systemctl restart mysql
+  262  service --all-status
+  263  service --status-all
+  264  systemctl --status-all
+  265  systemctl 
+  266  systemctl mysqld.service status
+  267  systemctl mysqld.service
+  268  systemctl status mysqld.service
+  269  systemctl stop mysqld.service
+  270  systemctl status mysqld.service
+  271  systemctl enable mysqld.service
+  272  systemctl status mysqld.service
+  273  systemctl start mysqld.service
+  274  systemctl status mysqld.service
+  275  droidmote 2302 password
+  276  yum -y upgrade
+  277  echo $PS1
+  278  export PS1="\e[0;31m[\u@\h \W]\$ \e[m "
+  279  export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
+  280  ls
+  281  ll
+  282  gcc
+  283  lsb_release -a
+  284  date
+  285  export PS1="\[\033[38;5;30m\][\[$(tput sgr0)\]\[\033[38;5;2m\]\u\[$(tput sgr0)\]\[\033[38;5;30m\]@\[$(tput sgr0)\]\[\033[38;5;6m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\W\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;30m\]]\[$(tput bold)\]\\$\[$(tput sgr0)\]"
+  286  ll
+  287  ls
+  288  vi /root/.bashrc 
+  289  cd Downloads/
+  290  ls
+  291  yum search libpng16
+  292  yum search libpng
+  293  yum -y install libpng
+  294  yum -y install libpng12
+  295  yum search filezila
+  296  yum search filezi
+  297  yum -y install filexilla
+  298  yum -y install filezilla
+  299  droidmote 2302 password
+  300  poweroff
+  301  ll
+  302  ls
+  303  grep
+  304  chmod 775
+  305  ruby -v
+  306  gem -v
+  307  rails -v
+  308  gem install rails
+  309  yum upgrade ruby
+  310  ruby -v
+  311  cd repos/
+  312  ls
+  313  mkdir ruby
+  314  cd ruby
+  315  ls
+  316  ll
+  317  vi setup_rhel.sh
+  318  vi setup_rhel.sh
+  319  chmod 777 setup_rhel.sh 
+  320  ./setup_rhel.sh 
+  321  ruby -v
+  322  ruby --version
+  323  rvm use 2.2.4 --default
+  324  ruby --version
+  325  gem -v
+  326  gem install rails
+  327  rails -v
+  328  gem list
+  329  gem install rails -v 3.2.9
+  330  rails -v
+  331  rvm
+  332  gem uninstall rails -v 5.2.2
+  333  rails -v
+  334  gem list
+  335  rails -v
+  336  rvm list
+  337  rvm rubies
+  338  rvm reset
+  339  rails -v
+  340  ruby -v
+  341  rvm --defaulr use 2.2.4
+  342  rvm --default use 2.2.4
+  343  ruby -v
+  344  rvm gemset list
+  345  rvm gemset use programming
+  346  rvm gemset use global
+  347  ruby -v
+  348  rvm gemset use default
+  349  rvm gemset list
+  350  rails -v
+  351  gem remove rails
+  352  gem 
+  353  rails -v
+  354  gem install rails -v 3.2.9
+  355  rails -v
+  356  ll
+  357  cd repos/ruby
+  358  ls
+  359  ll
+  360  ruby _3.2.9_ new HolaMundo
+  361  rails _3.2.9_ new HolaMundo
+  362  ll
+  363  cd HolaMundo/
+  364  ls
+  365  sublime .
+  366  rails server
+  367  rails server
+  368  rails
+  369  cd ..
+  370  rails server
+  371  cd HolaMundo/
+  372  ll
+  373  cat Gemfile
+  374  ls
+  375  rails server
+  376  rails server
+  377  rails _3.2.9_ server
+  378  cd ..
+  379  ls
+  380  rm -Rfv HolaMundo/
+  381  ll
+  382  ll
+  383  cd 64-bit_Driver/
+  384  ls
+  385  cd RPM/
+  386  ls
+  387  rpm -i *
+  388  ll
+  389  rpm -i cndrvcups-common-2.70-1.x86_64.rpm 
+  390  yum -y install  cndrvcups-common-2.70-1.x86_64.rpm 
+  391  yum -y install  cndrvcups-ufr2-uk-2.70-1.x86_64.rpm
+  392  droidmote 2302 password
+  393  cd /opt/
+  394  ls
+  395  ll
+  396  ls -la
+  397  mkdir mein
+  398  chmos 775 mein/ && chown alex:alex mein/
+  399  chmod 775 mein/ && chown alex:alex mein/
+  400  ll
+  401  yum install ghdl
+  402  yum search ghdl
+  403  yum search hdl
+  404  yum search wave
+  405  yum -y install gtkwave
+  406  yum search ext-zip
+  407  php -v
+  408  rpm -qf $(which php)
+  409  yum -y install php-pecl-zip
+  410  vi /etc/profile.d/laravel_profile.sh
+  411  source /etc/profile.d/laravel_profile.sh 
+  412  yum search qucs
+  413  cd /home/alex/Downloads/
+  414  ls
+  415  yum -y install qucs-0.0.18-15.fc29.x86_64.rpm 
+  416  yum -y install electronics-menu freehdl
+  417  yum -y install electronics-menu freehdl mot-adms libstdc++
+  418  yum upgrade -y
+  419  yum -y update
+  420  yum -y upgrade
+  421  yum -y distro-sync 
+  422  yum -y
+  423  yum -y update-minimal
+  424  yum distribution-synchronization
+  425  fsck.ext4 /dev/sda
+  426  fsck.ext4 /dev/sda1
+  427  fsck.ext4 /dev/sda2
+  428  fsck.ext4 /dev/sda3
+  429  fsck.ext4 /dev/sda4
+  430  fsck.ext4 /dev/sda5
+  431  fsck.ext4 /dev/sda6
+  432  fsck.ext4 /dev/sda7
+  433  fsck.ext4 /dev/sdb1
+  434  fsck.ext4 /dev/sdb
+  435  reboot
+  436  abrt-cli list --since 1544765528
+  437  abrt-auto-reporting enabled
+  438  abrt-cli list --since 1544765528
+  439  droidmote 2302 password
+  440  yum install youtube-dl
+  441  journalctl -xb
+  442  fsck.ext4 /dev/sda
+  443  fsck.ext4 /dev/sda1
+  444  fsck.ext4 /dev/sda2
+  445  fsck.ext4 /dev/sda3
+  446  fsck.ext4 /dev/sda5
+  447  fsck.ext4 /dev/sda6
+  448  fsck.ext4 /dev/sda3
+  449  fsck.ext4 /dev/sda4
+  450  fsck.ext4 /dev/sda5
+  451  cd
+  452  cd /
+  453  umpunt /home/
+  454  umount /home/
+  455  umount /home/
+  456  fsck.ext4 /dev/sda5
+  457  fsck.ext4 /dev/sda6
+  458  fsck.ext4 /dev/sda6 -y
+  459  fsck.ext4 /dev/sda6 -y
+  460  umount /
+  461  fsck.ext4 /dev/sda6 -y
+  462  fsck.ext4 /dev/sda5 -y
+  463  umount /dev/sda5
+  464  umount /
+  465  umount /
+  466  umount /root/
+  467  umount /
+  468  fsck.ext4 /dev/sda5 -y
+  469  fsck.ext4 /dev/sda6 -y
+  470  fsck /dev/sda5
+  471  fsck /dev/sda6
+  472  fsck /dev/sdb6
+  473  umount /home/
+  474  umount /home
+  475  fsck /dev/sdb6
+  476  fsck.ext4 /dev/sdb6
+  477  fsck.ext4 /dev/sdb6
+  478  umount /dev/sdb6
+  479  yum -y upgrade
+  480  yum -y update
+  481  yum update
+  482  yum upgrade
+  483  yum distro-sync 
+  484  yum -y instsall virtenv
+  485  yum -y install virtenv
+  486  yum search virtenv
+  487  yum search virtual
+  488  yum -y install python-virtualenv
+  489  yum -y install python3
+  490  yum -y upgrade python3
+  491  virtualenv test --python=python3
+  492  source test/bin/activate
+  493  pip list
+  494  pip install --upgrade
+  495  pip install --upgrade pip
+  496  pip list
+  497  pip install --upgrade setuptools
+  498  pip install --upgrade wheel
+  499  ls
+  500  ls -la
+  501  ls -la *
+  502  ls
+  503  cd apps/
+  504  ls
+  505  cat utils.py 
+  506  cd ..
+  507  ls
+  508  cd urbvan
+  509  ls
+  510  cd requirements/
+  511  ls
+  512  pip install -r base.txt 
+  513  cat base.txt 
+  514  cd..
+  515  cd ..
+  516  cd ..
+  517  ls
+  518  sublime setup.py 
+  519  chmod 777 *.sh
+  520  ll
+  521  ./upgrade_python3.sh 
+  522  python -V
+  523  deactivate
+  524  python -V
+  525  python3 -V
+  526  cd /srv/
+  527  cd ..
+  528  ls
+  529  cd /usr/src/
+  530  ls
+  531  cd Python-3.7.0/
+  532  ls
+  533  ./configure --prefix=/usr/local --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
+  534  make && make altinstall
+  535  python3 -V
+  536  python3.7 -V
+  537  make && make altinstallcd ..
+  538  ls
+  539  python3.7 -V
+  540  python3 -V
+  541  cd ..
+  542  ls
+  543  rm -Rf Python-3.7.0*
+  544  ls -la
+  545  wget "https://www.python.org/ftp/python/3.7.1/Python-3.7.1-tgz"
+  546  wget "www.python.org/ftp/python/3.7.1/Python-3.7.1-tgz"
+  547  wget "https://www.python.org/ftp/python/3.7.1/Python-3.7.1-tgz"
+  548  wget "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz"
+  549  wget "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz"
+  550  tar -xzvf Python-3.7.1.tar.xz 
+  551  tar -xvf Python-3.7.1.tar.xz 
+  552  cd Python-3.7.1/
+  553  ls
+  554  ./configure --prefix=/usr/local --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
+  555  ./configure --prefix=/usr/local --enable-optimizations --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
+  556  make
+  557  python3 -V
+  558  cd
+  559  cd /home/alex/repos/django_tech_test/
+  560  ls
+  561  chmod 777 *.sh
+  562  ./upgrade_python36.sh 
+  563  yum search python3
+  564  yum -y install python36
+  565  python3 -V
+  566  python36 -V
+  567  python37 -V
+  568  python36 -V
+  569  python3 -V
+  570  virtualenv test --python=python36
+  571  source test/bin/activate
+  572  python -v
+  573  python -V
+  574  pip list
+  575  pip install --upgrade pip
+  576  pip list
+  577  pip install --upgrade wheel setuptools pip
+  578  pip list
+  579  ls
+  580  cd urbvan
+  581  ls
+  582  ll
+  583  cd settings/
+  584  ls
+  585  cd ..
+  586  cd requirements/
+  587  ls
+  588  pip install -r base.txt 
+  589  pip list
+  590  deactivate
+  591  droidmote 2302 password
+  592  killall -9 droidmote
+  593  killall -9 droidmote
+  594  killall -9 droidmote
+  595  killall -9 droidmote
+  596  fg
+  597  g++ -version
+  598  g++ --version
+  599  ps -el | grep django
+  600  ps -el | grep py
+  601  ps -el
+  602  stty -a
+  603  python
+  604  kill -TERM
+  605  python
+  606  python3.6
+  607  kill -l
+  608  cd /usr/src/
+  609  ll
+  610  rm -Rfv Python-3.*
+  611  wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
+  612  ls
+  613  tar -xvf Python-3.7.1.tar.xz 
+  614  ls
+  615  cd Python-3.7.1/
+  616  ls
+  617  yum install -y gcc g++ openssl-devel gcc-devel g++-devel 
+  618  yum search gcc-
+  619  yum search gcc-c
+  620  yum search gcc
+  621  yum search libgcc
+  622  yum install -y gcc gcc-g++ openssl-devel libgcc
+  623  yum install -y gcc gcc-c++ openssl-devel libgcc
+  624  ./configure --prefix=/opt/python3
+  625  ./configure --prefix=/opt/python3 --enable-optimizations
+  626  make altinstall
+  627  cd /opt/python3/
+  628  ls
+  629  cd bin/
+  630  ls
+  631  ./python3.7
+  632  ln -sfv /opt/python3/bin/python3.7 /usr/bin/python3.7 
+  633  ln -sfv /opt/python3/bin/python3.7 /usr/bin/python37
+  634  getty
+  635  vi /etc/inittab 
+  636  vi /dev/tty
+  637  stty kill '^X' intr '^C' werase '^W' </dev/ttyconf
+  638  yum search getty
+  639  yum search all getty
+  640  stty intr ^C
+  641  stty intr ^C
+  642  stty intr ^C
+  643  stty intr ^C
+  644  stty intr ^C
+  645  stty intr ^C
+  646  stty intr ^F
+  647  python
+  648  stty intr ^C
+  649  mv .kde .kde.old1
+  650  ls -la
+  651  cd .local/
+  652  ls
+  653  cd share/
+  654  ls
+  655  cd ..
+  656  ls
+  657  cd ..
+  658  ls
+  659  ll
+  660  ls -la
+  661  cd .config/
+  662  ls
+  663  cd ..
+  664  mv .config/ .config.old
+  665  abrt-cli list --since 1545711747
+  666  killall -9 goland
+  667  killall -9 goland
+  668  killall -9 goland
+  669  killall -9 goland
+  670  killall -9 goland
+  671  killall -9 goland
+  672  killall -9 goland
+  673  killall -9 goland
+  674  killall -9 goland
+  675  killall -9 goland
+  676  killall -9 goland
+  677  wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgx
+  678  wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+  679  tar xvf Python-3.7.2.tgz 
+  680  ls
+  681  cd Python-3.7.2/
+  682  mkdir build
+  683  cd build/
+  684  gcc -V
+  685  gcc --version
+  686  g++ --version
+  687  ls
+  688  ls
+  689  ll
+  690  ls -la
+  691  ls
+  692  ../configure --enable-optimizations --prefix=/usr/src/Python37 CXX=g++
+  693  make
+  694  make test
+  695  sudo yum install libffi-devel
+  696  ls
+  697  ../configure --enable-optimizations --with-lto --with-pydebug --prefix=/usr/src/Python37 CXX=g++ 
+  698  ls /usr/src/
+  699  ls
+  700  rm -Rfv *
+  701  ls -la
+  702  ../configure --enable-optimizations --with-lto --with-pydebug --prefix=/usr/src/Python37 CXX=g++ 
+  703  yum search glibc
+  704  yum install -y glibc glibc-*
+  705  ll
+  706  make
+  707  ll
+  708  cd ..
+  709  make clean
+  710  ./python
+  711  ll
+  712  cd build/
+  713  ll
+  714  ./python 
+  715  ll
+  716  cd ..
+  717  cd ..
+  718  ls
+  719  rm -Rf Python-3.7.2/
+  720  ll
+  721  tar -xf Python-3.7.2.tgz 
+  722  ll
+  723  cd Python-3.7.2/
+  724  ls
+  725  mkdir build
+  726  cd build/
+  727  ../configure --with-lto --with-pydebug --prefix=/usr/src/python37 CXX=g++
+  728  make
+  729  ls
+  730  ll
+  731  make altinstall
+  732  cd ..
+  733  cd ..
+  734  ls
+  735  cd python37/
+  736  ls
+  737  cd bin/
+  738  ls
+  739  ./python3.7
+  740  ./python3.7 -m venv test
+  741  ls
+  742  source test/bin/activate
+  743  pip list
+  744  pip list
+  745  pip freeze
+  746  pip list
+  747  sublime /usr/src/python37/bin/test/lib/python3.7/site-packages/pip/_vendor/html5lib/_trie/_base.py
+  748  pip list
+  749  pip list
+  750  cd ..
+  751  cd ..
+  752  ls
+  753  mv python37/ python37_beta
+  754  wget https://www.python.org/python/3.7.1/Python-3.7.1.tgz
+  755  wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz
+  756  tar -xvf Python-3.7.1.tgz 
+  757  cd Python-3.7.1/
+  758  ls
+  759  mkdir build
+  760  cd build/
+  761  ../configure --with-lto --with-pydebug --enable-optimizations CXX=g++ && make && make altinstall
+  762  deactivate
+  763  python37 -V
+  764  python37 -V
+  765  python37
+  766  python3 -V
+  767  ls -la /usr/bin/python3
+  768  ln -sfv /usr/bin/python3.7 /usr/bin/python3
+  769  ls -la /usr/bin/python3
+  770  python3 -V
+  771  cd ..
+  772  who
+  773  killall -u alex
+  774  history >> 002.txt 
