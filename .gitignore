@@ -1,5 +1,5 @@
 # Archivos a ignorar
-
 .project
 .directory
-.idea
+.idea/
+.idea/*

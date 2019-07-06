@@ -13,23 +13,22 @@ $DB_HOST = 'localhost';
 $DB_NAME = 'bitacora';
 $DB_USER = 'root';
 $DB_PASS = 'Alejandro_1';
-//$DB_PASS =  'root';
-
 
 //$DB_HOST = 'localhost';
 //$DB_NAME = 'id8075360_bitacora';
 //$DB_USER = 'id8075360_root';
 //$DB_PASS = 'Alejandro_1';
 
+//$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 // $conn= mysqli_connect("localhost","root","EsCoMproyecto","login");
 
 if( !$conn ){
-    die('No pudo conectarse.');
-//	print("<br><div class='alert alert-danger font' role='alert'>No pudo conectarse a la Base de Datos</div>");
+//    die('No pudo conectarse.');
+	print("<br><div class='alert alert-danger font' role='alert'>No pudo conectarse a la Base de Datos</div>");
 }else{
-    // print("successful");
-    // print("<br><div class='alert alert-success font' role='alert'>Conectado a Base de Datos</div>");
+     print("successful");
+     print("<br><div class='alert alert-success font' role='alert'>Conectado a Base de Datos</div>");
 }
 
 

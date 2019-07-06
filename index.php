@@ -66,9 +66,13 @@ date_default_timezone_set('Mexico/General');
                     $pass = $_POST['pass'];
 
                     $ctaUsuario = "SELECT date(now()) as fhoy, now() as ahora,  id, username, password FROM usuarios where  id_status=1 AND email='$email' AND password='$pass'";
-                    
-                    $result = $conn->query($ctaUsuario);
+                    echo $ctaUsuario;
+
+                    $result = $conn->query($ctaUsuario);  // FIXME
+                    print("<h1>result: ".$result."</h1>");
                     $rows = $result->num_rows;
+
+                    print("<h1>rows: ".$rows."</h1>");
 
                     if ($rows == 1){
                         for ($i=0; $i < $rows ; $i++) {
